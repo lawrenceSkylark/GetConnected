@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    tools:context=".GroupChatActivity">
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/groupIconIv"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_group_primary"/>
+        <TextView
+            android:id="@+id/groupTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/groupIconIv"
+            android:text="Group Title"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/addmem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="150dp"
+            android:layout_toRightOf="@+id/groupTitleTv"
+            android:paddingTop="5dp"
+            android:src="@drawable/add_participant" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:stackFromEnd="true"
+        android:layout_below="@+id/toolbar"
+        tools:listitem="@layout/row_groupchat_left"
+        android:id="@+id/chatRv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/attachBtn"
+            android:background="@null"
+            android:src="@drawable/ic_attach_file"/>
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:textColor="#c90dbc"
+            android:hint="Write a message"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/btnsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/send"/>
+    </LinearLayout>
+
+</RelativeLayout>

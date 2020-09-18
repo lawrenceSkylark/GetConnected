@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    tools:context=".PrivateChatActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:layout_width="35dp"
+                android:paddingTop="10dp"
+                android:layout_height="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_face"
+                android:id="@+id/profileIv"/>
+            <TextView
+                android:layout_toRightOf="@id/profileIv"
+                android:id="@+id/usernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:text="His Name"
+                android:layout_marginStart="50dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/userStatusTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_below="@id/usernameTv"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:paddingStart="22dp"
+                android:text="Online" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycleViewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chatLayout"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="49dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:stackFromEnd="true"
+        tools:listitem="@layout/row_groupchat_left" />
+
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/attachBtn"
+            android:background="@null"
+            android:src="@drawable/ic_attach_file"/>
+        <EditText
+            android:id="@+id/messageEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:textColor="#c90dbc"
+            android:hint="Write a message"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/send"/>
+    </LinearLayout>
+</RelativeLayout>

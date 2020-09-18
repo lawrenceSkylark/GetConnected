@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookingActivity">
+    <com.shuhart.stepview.StepView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/step_view"
+        android:padding="16dp"
+        app:sv_animationType="None"
+        app:sv_stepPadding="12dp"
+        app:sv_selectedCircleColor="@color/colorBtn"
+        app:sv_selectedStepNumberColor="@android:color/white"
+        app:sv_selectedTextColor="@color/colorBtn"
+        app:sv_doneCircleColor="@color/colorAccent"
+        app:sv_doneStepLineColor="@color/colorAccent"
+        app:sv_doneTextColor="@color/white"
+        app:sv_doneStepMarkColor="@android:color/white"
+
+        app:sv_typeface="@font/josefinslabbold"/>
+
+    <com.example.lawrence.getconnected.Common.NonSwipeViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/step_view"
+        android:layout_above="@+id/layout_button"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:id="@+id/layout_button">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/previous"
+            android:enabled="false"
+            android:background="@color/dark_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+
+            android:textColor="@color/white"
+            android:text="Previous"
+            android:layout_above="@+id/txt_skip" />
+
+        <Button
+            android:enabled="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Next"
+            android:background="@color/dark_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/white"
+            android:text="Next"
+            android:layout_above="@+id/txt_skip" />
+
+    </LinearLayout>
+</RelativeLayout>

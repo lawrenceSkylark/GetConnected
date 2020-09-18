@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameTv"
+        android:visibility="gone"
+        android:text="Username"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageTv"
+        android:layout_below="@id/usernameTv"
+        android:text="The message"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/colorStandardBlack"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageIv"
+        android:layout_below="@id/usernameTv"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeTv"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/messageTv"
+        android:layout_marginEnd="5dp"
+        android:text="time"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"/>
+</RelativeLayout>

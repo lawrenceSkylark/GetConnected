@@ -1,0 +1,80 @@
+<resources>
+    <string name="invalid_name">Please enter a valid Name</string>
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="invalid_confirm_email">Email does not match</string>
+    <string name="invalid_password">Please enter a valid password</string>
+    <string name="invalid_confirm_password">Password does not match</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_closed">close navigation drawer</string>
+    <string name="no"> No</string>
+    <string name="yes">Yes</string>
+    <string name="develop">Hi there ,My name is lawrence Kipngeno/n
+                             and i am the person behind this app/n
+                             if you have any question or suggestion ,
+                               /n dont hesitate to contact me
+                             ./n</string>
+    <string name="action_sign_in_short">REGISTER</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">RESET PASSWORD</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="settings_name">Account Settings</string>
+    <string name="google_place_api">AIzaSyDXPrRsFiTlESAhSXoQkKT78SJF2nKABDI</string>
+    <string name="strDrUnAvailable">"*** Un-Available***"</string>
+
+    <string name="userName">User Name: </string>
+    <string name="password">Password:</string>
+    <string name="bioData">Enter Student Bio-Data</string>
+    <string name="lblFName">First Name:</string>
+    <string name="lblLName">Last Name:</string>
+    <string name="lblAddress">Address:</string>
+    <string name="lblCity">City:</string>
+    <string name="lblPostcode">Post Code:</string>
+    <string name="chooseProg">Choose The Program</string>
+    <string name="payInfo">Enter Payment Details</string>
+    <string name="nameOnCard">Name On Card: </string>
+    <string name="address">Addren bmss: </string>
+    <string name="phone">Phone: </string>
+    <string name="cardType">Card Type: </string>
+    <string name="cardNumber">Card Number: </string>
+    <string name="cardExpiry">Expiry:</string>
+    <string name="lblSummary">Summary</string>
+    <string name="lblAllStudents">List Of All Students</string>
+
+    <string name="starting_from_intent">STARTING_FROM_INTENT</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="dashOpen">Open Dashboard</string>
+    <string name="dashClose">Close Dashboard</string>
+    <string name="work_hrs_title"><b>Work Hours</b> (Mon-Fri)</string>
+    <string name="work_hrs_value"> <p>9:00 AM - 5:00 PM</p></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">CHANNELS</string>
+    <string name="users">USERS</string>
+    <string name="chats">Chats</string>
+    <string name="more">MORE</string>
+</resources>

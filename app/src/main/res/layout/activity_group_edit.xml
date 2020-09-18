@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    tools:context=".CreateChannelActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:id="@+id/toolbar_title" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/groupicon"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        android:src="@drawable/ic_group_primary"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/GroupTitleet"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/groupicon"
+        android:hint="Group title"
+        android:padding="30dp"/>
+    <EditText
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:id="@+id/GroupDescriptionet"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/GroupTitleet"
+        android:gravity="top"
+        android:scrollHorizontally="false"
+        android:minHeight="100dp"
+        android:hint="Group Descriptions"
+        android:padding="10dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="@color/green400"
+        app:rippleColor="@color/colorRed"
+        app:borderWidth="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btnUpdateDone"
+        android:background="@color/green400"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/done_btn"/>
+
+
+</RelativeLayout>

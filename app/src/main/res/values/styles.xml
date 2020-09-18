@@ -1,0 +1,254 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. -->
+    <color name="stepview_circle_done">@android:color/white</color>
+    <color name="stepview_circle_selected">@android:color/white</color>
+    <color name="stepview_line_done">@android:color/white</color>
+    <color name="stepview_line_next">#26ffffff</color>
+    <color name="stepview_mark">@color/stepview_selected_number</color>
+    <color name="stepview_selected_number">#25448a</color>
+    <color name="stepview_text_done">#40ffffff</color>
+    <color name="stepview_text_next">#40ffffff</color>
+    <color name="stepview_text_selected">@android:color/white</color>
+    <declare-styleable name="StepView">
+        <attr format="color" name="sv_selectedCircleColor"/>
+        <attr format="dimension" name="sv_selectedCircleRadius"/>
+        <attr format="color" name="sv_selectedTextColor"/>
+        <attr format="color" name="sv_selectedStepNumberColor"/>
+        <attr format="dimension" name="sv_stepNumberTextSize"/>
+        <attr format="color" name="sv_doneStepMarkColor"/>
+        <attr format="color" name="sv_doneCircleColor"/>
+        <attr format="dimension" name="sv_doneCircleRadius"/>
+        <attr format="color" name="sv_doneTextColor"/>
+        <attr format="color" name="sv_nextTextColor"/>
+        <attr format="color" name="sv_nextStepLineColor"/>
+        <attr format="color" name="sv_doneStepLineColor"/>
+        <attr format="dimension" name="sv_stepPadding"/>
+        <attr format="dimension" name="sv_textPadding"/>
+        <attr format="dimension" name="sv_stepLineWidth"/>
+        <attr format="reference" name="sv_stepViewStyle"/>
+        <attr format="integer" name="sv_stepsNumber"/>
+        <attr format="reference" name="sv_steps"/>
+        <attr format="reference" name="sv_typeface"/></declare-styleable>
+    <string name="app_name">IChat</string>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="normalText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">19sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#FF3105F7</item>
+    </style>
+
+
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/background_color</item>
+    </style>
+
+    <style name="CustomToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--Input Theme-->
+    <style name="CustomInputStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/colorStandardBlack</item>
+        <item name="android:theme">@color/colorDarkBlue</item>
+    </style>
+    <style name="CustomPopupStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Styles for help -->
+    <style name="HelpButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/light_foreground1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="HelpButton.Dark">
+        <item name="android:textColor">@color/dark_foreground1</item>
+    </style>
+
+
+    <style name="HeadingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ButtonTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="AppTheme.ProfileTheme">
+        <item name="colorPrimaryDark">@color/profilePrimaryDark</item>
+        <item name="colorAccent">@color/profileAccentColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+    </style>
+
+    <style name="TransparentText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="headerText" parent="parent">
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textInputHintStyle" parent="TextAppearance.AppCompat.Medium.Inverse">
+        <item name="android:textColorHint">@color/blackTextColor</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="profileDetailsLayout" parent="parent">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="profileDetailsImage">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="profileDetailsTextMain" parent="viewParent">
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="profileDetailsMiniText" parent="viewParent">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="proifleDetailsView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/profileAccentColor</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="profileStyledBackButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/profile_back_button</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:drawableLeft">@drawable/back_to_home_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:minWidth">250dp</item>
+    </style>
+    <style name="menu">
+        <item name="android:background">#96ffffff</item>
+    </style>
+    <style name="menuLine">
+        <item name="android:padding">15dp</item>
+        <item name="android:background">#96ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="menuIcon">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="menuText">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="btnPrimary" parent="@android:style/Widget.Button">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_bg_rounded</item>
+    </style>
+
+    <style name="btnSecondary" parent="@android:style/Widget.Button">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#1DA1F2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_bg_rounded_outline</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="radioBtn">
+        <item name="android:buttonTint">@color/colorPrimary</item>
+    </style>
+    <style name="StepView">
+        <item name="sv_selectedCircleColor">@color/stepview_circle_selected</item>
+        <item name="sv_selectedCircleRadius">14dp</item>
+        <item name="sv_selectedTextColor">@color/stepview_text_selected</item>
+        <item name="sv_selectedStepNumberColor">@color/stepview_selected_number</item>
+        <item name="sv_stepNumberTextSize">12sp</item>
+        <item name="sv_doneStepMarkColor">@color/stepview_mark</item>
+        <item name="sv_doneCircleColor">@color/stepview_circle_done</item>
+        <item name="sv_doneCircleRadius">14dp</item>
+        <item name="sv_doneTextColor">@color/stepview_text_done</item>
+        <item name="sv_nextTextColor">@color/stepview_text_next</item>
+        <item name="sv_nextStepLineColor">@color/stepview_line_next</item>
+        <item name="sv_doneStepLineColor">@color/stepview_line_done</item>
+        <item name="sv_stepPadding">12dp</item>
+        <item name="sv_textPadding">12dp</item>
+        <item name="sv_stepLineWidth">0.5dp</item>
+        <item name="sv_animationType">Line</item>
+    </style>
+
+
+</resources>

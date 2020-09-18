@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="10dp"
+    android:background="#1224"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profileIv"
+        android:src="@drawable/ic_default"
+        app:c_border_color="@null"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageTv"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:scrollHorizontally="false"
+        android:text="my message"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/colorStandardBlack"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/imagepic"
+        android:id="@+id/messageIv"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeTv"
+        android:textAlignment="textEnd"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:text="15/03/2020/ 05:59pm"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/isSeenTv"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:text="delivered"
+        android:textSize="12sp"/>
+</LinearLayout>

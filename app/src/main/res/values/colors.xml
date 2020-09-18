@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorRed">#EB3349</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="colorAccent">#f2fe71</color>
+    <color name="colorPrimary">#00bcd4</color>
+    <color name="colorPrimaryDark">#0097a7</color>
+    <color name="colorTransparentPink">#FF9EA1</color>
+
+
+
+    <color name="colorActionBar">#c5c8d1</color>
+    <color name="colorBtn">#7b818f</color>
+    <color name="colorBtnTxt">#fdfdfe</color>
+    <color name="colorTxt">#7b818f</color>
+    <color name="colorBg">#fdfdfe</color>
+    <color name="colorBorders">#a7aab3</color>
+
+
+
+    <color name="colorTaskDesc">#3be910</color>
+
+    <color name="dashboard_segment1">#9600e1ff</color>
+    <color name="dashboard_segment2">#96ff0057</color>
+    <color name="dashboard_segment3">#96ff9800</color>
+    <color name="dashboard_segment4">#9600ff83</color>
+
+
+    <color name="dashboard_segment1_h">#9600535e</color>
+    <color name="dashboard_segment2_h">#9659001e</color>
+    <color name="dashboard_segment3_h">#965e3800</color>
+    <color name="dashboard_segment4_h">#96014e29</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+    <color name="colorStandardBlack">#262626</color>
+    <color name="colorDarkBlue">#001621</color>
+    <color name="colorCyanBlue">#0B9BE2</color>
+    <color name="colorMidBlue">#032B3F</color>
+    <color name="colorCoinBackground">#01242b</color>
+    <color name="bluegreen900">#263238</color>
+    <color name="green400">#66bb6a</color>
+    <color name="bluegreen500">#607d8b</color>
+    <color name="bluegreen300">#90a4ae</color>
+    <color name="bluegreen400">#78909c</color>
+    <color name="light_background">#ffffffff</color>
+    <color name="dark_background">#ff000000</color>
+    <color name="foreground1">#ff000000</color>
+    <color name="light_foreground1">#ffeeeeee</color>
+    <color name="dark_foreground1">#ff000000</color>
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="background_color">#009688</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+
+</resources>

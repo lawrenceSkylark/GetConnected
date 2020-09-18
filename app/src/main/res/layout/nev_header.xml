@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#019b22"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:id="@+id/nev"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/editDp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="0dp"
+        android:src="@drawable/profile_round" />
+
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/editDp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My profile"
+        android:id="@+id/editProfile"/>
+
+</RelativeLayout>

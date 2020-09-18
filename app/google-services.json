@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "991153160556",
+    "firebase_url": "https://getconnected-e4c95.firebaseio.com",
+    "project_id": "getconnected-e4c95",
+    "storage_bucket": "getconnected-e4c95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991153160556:android:6f8018f510c5512e57f349",
+        "android_client_info": {
+          "package_name": "com.example.lawrence.getconnected"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991153160556-446ita2i0or3faiavbrukqgqd7qllb8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3bmvWFS3VeZnwSzlhIJLc2zR-lOU7DrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991153160556-446ita2i0or3faiavbrukqgqd7qllb8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

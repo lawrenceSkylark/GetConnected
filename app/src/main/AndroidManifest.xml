@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lawrence.getconnected">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".GroupEditActivity"></activity>
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".GroupInfoActivity" />
+        <activity android:name=".GroupParticipantsAddActivity" />
+        <activity android:name=".PrivateChatActivity" />
+        <activity android:name=".Register2Activity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".CreateChannelActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".GroupChatActivity" />
+        <activity android:name=".homeActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".SelectTime" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".Bookings_AllActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBElxksnifE_t_PYF7uskJVZ1FL25aZ0fg" />
+    </application>
+
+</manifest>

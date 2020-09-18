@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="100dp"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileIv"
+            android:src="@drawable/ic_default"
+            app:c_border_color="@null"/>
+        <TextView
+            android:layout_toRightOf="@id/profileIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageTv"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:scrollHorizontally="false"
+            android:text="his message"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorStandardBlack"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/imagepic"
+            android:id="@+id/messageIv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTv"
+            android:layout_below="@id/messageTv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:text="15/03/2020/ 05:59pm"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isSeenTv"
+            android:visibility="gone"
+            android:gravity="end"
+            android:layout_marginEnd="5dp"
+            android:text="delivered"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

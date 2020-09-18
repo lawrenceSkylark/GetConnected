@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home">
+
+        </item>
+        <item
+            android:id="@+id/channels"
+            android:icon="@drawable/join"
+            android:title="Join Channels">
+
+        </item>
+        <item
+            android:id="@+id/create"
+            android:icon="@drawable/create"
+            android:title="Create discussion">
+
+        </item>
+        <item
+            android:id="@+id/mail"
+            android:icon="@drawable/mail"
+            android:title="check mail">
+
+        </item>
+        <item
+            android:id="@+id/miradi"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="miradi">
+
+        </item>
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/Developer"
+                android:icon="@drawable/developer"
+                android:title="Developer">
+
+            </item>
+
+            <item
+                android:id="@+id/Help"
+                android:icon="@drawable/help"
+                android:title="Help">
+
+            </item>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="share">
+
+            </item>
+        </menu>
+
+    </item>
+
+</menu>
